@@ -114,7 +114,7 @@ function logout() {
     showPage(loginPage);
 }
 
-document.getElementById("logoutBtn").addEventListener("click", logout);
+// document.getElementById("logoutBtn").addEventListener("click", logout);
 document.getElementById("privateLogoutBtn").addEventListener("click", logout);
 
 document.getElementById("privateBtn").addEventListener("click", function () {
