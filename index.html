@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Test System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section id="loginPage" class="card">
+            <h1>Đăng nhập</h1>
+            <p class="subtitle">Hệ thống kiểm thử Login</p>
+
+            <form id="loginForm" novalidate>
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username">
+                <small id="usernameError" class="error"></small>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password">
+                <small id="passwordError" class="error"></small>
+
+                <button type="submit">Đăng nhập</button>
+                <p id="loginMessage" class="message"></p>
+            </form>
+        </section>
+
+        <section id="homePage" class="card hidden">
+            <h1>Trang chính</h1>
+            <p>Đăng nhập thành công với tài khoản <strong id="welcomeUser"></strong>.</p>
+            <div class="actions">
+                <button id="privateBtn">Trang bảo mật</button>
+                <button id="logoutBtn" class="secondary">Đăng xuất</button>
+            </div>
+        </section>
+
+        <section id="privatePage" class="card hidden">
+            <h1>Trang bảo mật</h1>
+            <p>Bạn đã được xác thực và có quyền truy cập trang này.</p>
+            <div class="actions">
+                <button id="backHomeBtn">Về trang chính</button>
+                <button id="privateLogoutBtn" class="secondary">Đăng xuất</button>
+            </div>
+        </section>
+
+        <section class="test-info">
+            <h2>Thông tin tài khoản test</h2>
+            <p><b>Username:</b> admin</p>
+            <p><b>Password:</b> admin123</p>
+            <p class="note">Trang này dùng để thực hành các test case TC01–TC25.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
